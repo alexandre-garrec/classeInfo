@@ -23,7 +23,7 @@ var MenuComponent = React.createClass({
     return (
       <ScrollView style={styles.menu}>
         <Text style={styles.menuTitle}>Vos classes</Text>
-        <View style={styles.item}>
+        <View style={styles.itemSelect}>
           <Text style={styles.text}>6 ieme</Text>
         </View>
         <View style={styles.item}>
@@ -66,6 +66,13 @@ var styles = StyleSheet.create({
     borderBottomColor : "#e5e5e5",
     borderBottomWidth: 1,
     flexDirection: 'row',
+  },
+  itemSelect : {
+    borderBottomColor : "#e5e5e5",
+    borderBottomWidth: 1,
+    flexDirection: 'row',
+    backgroundColor: '#e5e5e5',
+
   },
   text: {
     margin : 10,
